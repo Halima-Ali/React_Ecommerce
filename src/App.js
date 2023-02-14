@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductDetail from "./Components/ProductDetail/ProductDetail";
+import Checkout from "./Components/Checkout/Checkout";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
-            <Route path="/checkout" element={<h1>Checkout</h1>} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="/product/:productId" element={<ProductDetail />} />
           </Route>
         </Routes>

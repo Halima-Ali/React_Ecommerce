@@ -1,0 +1,18 @@
+.checkout{
+ display: flex;
+ margin: 20px;
+}
+
+.checkout__left{
+ flex: 2;
+ border: 0.1px solid #F0EEED;
+ margin: 10px;
+ padding: 20px;
+ border-radius: 10px;
+}
+
+.checkout__right{
+ flex: 1;
+ background-color: green;
+}
+

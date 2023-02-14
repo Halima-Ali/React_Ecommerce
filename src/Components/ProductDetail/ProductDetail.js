@@ -11,6 +11,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 export default function ProductDetail() {
  const { productId } = useParams();
  const selectedProduct = ProductData.find((item) => item.id === productId);
+  
  const [state, dispatch] = useStateValue();
  const [counter, setCounter] = useState(0);
 

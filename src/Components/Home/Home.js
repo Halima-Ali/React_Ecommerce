@@ -4,6 +4,7 @@ import "./home.css"
 import StarIcon from "@mui/icons-material/Star";
 import { useStateValue } from "../../Context/StateProvider";
 import { Link } from "react-router-dom";
+import {nanoid} from "nanoid"
 
 export default function Home() {
 
@@ -24,7 +25,7 @@ export default function Home() {
               .fill()
               .map((_, i) => {
                 return (
-                  <p>
+                  <p key={nanoid()}>
                     <StarIcon fontSize="small" />
                   </p>
                 );
@@ -41,15 +42,15 @@ export default function Home() {
 
   function addToCart(id) {
     const product = ProductData.filter((item) => item.id === id);
+    const itemProduct = product[0];
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
-        ...product
+        ...itemProduct
       },
     });    
   }
 
-  console.log(state.basket);
 
  return (
    <div className="home">
