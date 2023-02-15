@@ -4,15 +4,26 @@
 }
 
 .checkout__left{
- flex: 2;
+ flex: 3;
  border: 0.1px solid #F0EEED;
  margin: 10px;
- padding: 20px;
+ padding: 30px;
  border-radius: 10px;
 }
 
 .checkout__right{
+ /* max-width: 300px; */
  flex: 1;
- background-color: green;
+ border: 0.1px solid #F0EEED;
+ margin: 10px;
+ padding: 30px;
+ border-radius: 10px;
+ height: max-content;
 }
 
+/* Responsiveness */
+@media screen and (max-width:800px){
+ .checkout{
+  flex-direction: column;
+ }
+}

@@ -1,7 +1,7 @@
 import React from "react"
 import "./productDetail.css"
 import { useState } from "react";
-import { useParams } from "react-router"
+import { redirect, useParams } from "react-router"
 import { ProductData } from "../../Data/Product";
 import StarIcon from "@mui/icons-material/Star";
 import { useStateValue } from "../../Context/StateProvider";
@@ -18,10 +18,12 @@ export default function ProductDetail() {
   function addToCart() {
     dispatch({
       type: "ADD_TO_BASKET",
+      number: counter,
       item: {
         ...selectedProduct,
       },
     });
+    setCounter(0)
  }
  
  function incrementCounter() {
@@ -47,6 +49,10 @@ export default function ProductDetail() {
  return (
    <div className="details">
      <div className="details__left">
+       <p>
+         {selectedProduct.category} / Shop {selectedProduct.category} by Type /{" "}
+         <span>{selectedProduct.title}</span>
+       </p>
        <img src={selectedProduct.image} alt="productdetails" />
      </div>
      <div className="details__right">

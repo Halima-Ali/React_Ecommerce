@@ -45,6 +45,7 @@ export default function Home() {
     const itemProduct = product[0];
     dispatch({
       type: "ADD_TO_BASKET",
+      number: 1,
       item: {
         ...itemProduct
       },

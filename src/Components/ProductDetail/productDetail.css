@@ -9,6 +9,16 @@
  flex: 1;
 }
 
+.details p{
+ color: #7F8487;
+ margin-bottom: 30px;
+}
+
+.details p span{
+ color: #434242;
+ font-weight: bold;
+}
+
 .details__left img{
  max-height: 100vh;
  width: 100%;
@@ -20,7 +30,7 @@
 
 .details__right{
  flex: 1;
- padding: 20px;
+ padding: 30px 20px;
  max-width: 550px;
 }
 
