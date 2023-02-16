@@ -41,7 +41,7 @@
  border-radius: 5px;
 }
 
-.login__button, .login__signInbutton{
+.login__button, .login__signUpbutton{
  width: 102%;
  height: 34px;
  margin: 20px auto;
@@ -55,7 +55,7 @@
  color: white;
 }
 
-.login__signInbutton{
+.login__signUpbutton{
  background-color: white;
  border: .1px solid rgba(2, 48, 32,0.9);
 }

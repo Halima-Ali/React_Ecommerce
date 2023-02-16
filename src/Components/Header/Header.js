@@ -6,10 +6,15 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import {Link} from "react-router-dom"
 import { useStateValue } from "../../Context/StateProvider";
+import { auth } from "../../firebase";
 
 export default function Header() {
 
   const [state, dispatch] = useStateValue();
+
+  function signOut() {
+    
+  }
 
   return (
     <div className="header">
@@ -32,13 +37,18 @@ export default function Header() {
       <div className="header__nav">
         <div className="header__option">
           <PersonOutlineOutlinedIcon className="header__optionIcon" />
-          <span>Account</span>
+          <span>{state.user ? state.user.email : "Account"}</span>
         </div>
+        <Link to={!state.user && "/login"} style={{ textDecoration: "none" }}>
+          <div className="header__option" onClick={signOut}>
+            <span>{state.user ? "Sign Out" : "Sign In"}</span>
+          </div>
+        </Link>
         <Link to="/checkout" style={{ textDecoration: "none" }}>
           <div className="header__option">
             <ShoppingCartOutlinedIcon className="header__optionIcon" />
             <span>Cart</span>
-            {state.basket.length>0 && (
+            {state.basket.length > 0 && (
               <div className="header__optionCartNo">{state.basket.length}</div>
             )}
           </div>
