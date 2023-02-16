@@ -1,7 +1,7 @@
 import React from "react"
 import "./productDetail.css"
 import { useState } from "react";
-import { redirect, useParams } from "react-router"
+import{ useNavigate, useParams } from "react-router"
 import { ProductData } from "../../Data/Product";
 import StarIcon from "@mui/icons-material/Star";
 import { useStateValue } from "../../Context/StateProvider";
@@ -14,6 +14,7 @@ export default function ProductDetail() {
   
  const [state, dispatch] = useStateValue();
  const [counter, setCounter] = useState(0);
+  const navigate = useNavigate();
 
   function addToCart() {
     dispatch({
@@ -24,6 +25,7 @@ export default function ProductDetail() {
       },
     });
     setCounter(0)
+    navigate('/');
  }
  
  function incrementCounter() {

@@ -32,9 +32,6 @@
  color: #434242;
 }
 
-.checkoutProduct__delete{
- color: red;
-}
 
 .checkoutProduct__number{
  background-color: #F6F6F6;
@@ -47,12 +44,16 @@
  border-radius: 50px;
  width: 180px;
  font-size: 13px;
+ transition: border-radius 1s;
 }
 
 /* Responsiveness */
 @media screen and (max-width:800px){
  .checkoutProduct__info{
   flex-direction: column;
-  
+ }
+
+ .checkoutProduct__number{
+  border-radius: 20px;
  }
 }

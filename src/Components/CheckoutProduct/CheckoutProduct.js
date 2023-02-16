@@ -1,6 +1,6 @@
 import React from "react"
 import "./checkoutProduct.css";
-// import DeleteIcon from "@mui/icons-material/Delete";
+import DeleteIcon from "@mui/icons-material/Delete";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { useStateValue } from "../../Context/StateProvider";
@@ -52,7 +52,7 @@ export default function CheckoutProduct(props) {
        </div>
      </div>
      <div className="checkoutProduct__number">
-       <RemoveIcon className="checkoutProduct_icon" onClick={deleteItem} />
+      {props.quantity>1?<RemoveIcon className="checkoutProduct_icon" onClick={deleteItem} />: <DeleteIcon className="checkoutProduct_icon" onClick={deleteItem} style={{color:"red"}}/>}       
        {props.quantity}
        <AddIcon className="checkoutProduct__icon" onClick={addItem} />
      </div>
@@ -60,4 +60,3 @@ export default function CheckoutProduct(props) {
  );
 }
 
-    //  <DeleteIcon className="checkoutProduct__delete" />;

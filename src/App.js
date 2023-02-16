@@ -4,17 +4,18 @@ import Home from "./Components/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductDetail from "./Components/ProductDetail/ProductDetail";
 import Checkout from "./Components/Checkout/Checkout";
+import Login from "./Pages/Login/login"
 
 function App() {
   return (
     <BrowserRouter>
       <div>
-        <Header />
         <Routes>
           <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/product/:productId" element={<ProductDetail />} />
+            <Route index element={<><Header /> <Home /></>} />
+            <Route path="/checkout" element={<><Header /> <Checkout /></>} />
+            <Route path="/product/:productId" element={<><Header /> <ProductDetail /></>} />
+            <Route path="/login" element={<Login />} />
           </Route>
         </Routes>
       </div>
