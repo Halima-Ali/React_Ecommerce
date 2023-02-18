@@ -7,13 +7,19 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import {Link} from "react-router-dom"
 import { useStateValue } from "../../Context/StateProvider";
 import { auth } from "../../firebase";
+import LoginIcon from "@mui/icons-material/Login";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 export default function Header() {
 
   const [state, dispatch] = useStateValue();
 
+  
+
   function signOut() {
-    
+    if (state.user) {
+      auth.signOut();
+    }
   }
 
   return (
@@ -37,10 +43,15 @@ export default function Header() {
       <div className="header__nav">
         <div className="header__option">
           <PersonOutlineOutlinedIcon className="header__optionIcon" />
-          <span>{state.user ? state.user.email : "Account"}</span>
+          <span>{state.user ? state.user.email : "Guest"}</span>
         </div>
         <Link to={!state.user && "/login"} style={{ textDecoration: "none" }}>
           <div className="header__option" onClick={signOut}>
+            {state.user ? (
+              <LogoutIcon className="header__optionIcon" />
+            ) : (
+              <LoginIcon className="header__optionIcon" />
+            )}
             <span>{state.user ? "Sign Out" : "Sign In"}</span>
           </div>
         </Link>

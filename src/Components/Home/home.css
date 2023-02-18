@@ -10,6 +10,31 @@
  color: #434242;
 }
 
+.home__categories{
+ margin: 20px auto;
+ max-width: 1250px;
+ display: flex;
+}
+
+.home__categories div {
+ margin: 0 10px;
+ background-color: rgba(127, 132, 135,0.2);
+ display: flex;
+ align-items: center;
+ border-radius: 20px;
+ padding: 0 10px;
+}
+
+.home__categoriesButtons{
+ padding : 10px;
+ border: none;
+ outline: none;
+ background-color: transparent;
+}
+
+/* .home__categoriesIcon{
+} */
+
 .cards{
  margin: 0 auto;
  max-width: 1250px;
@@ -81,6 +106,8 @@
 .card__rating p{
  color: green;
 }
+
+
 
 
 /* #F6F6F6 */
