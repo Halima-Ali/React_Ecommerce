@@ -25,9 +25,11 @@ export default function Subtotal(props) {
         </strong>
       </p>
       <small className="subtotal__gift">
-        <input type="checkbox" /> This order contains a gift
+       <input type="checkbox" /> This order contains a gift
       </small>
-      <button onClick={(e) => navigate("/payment")}>Proceed to Checkout</button>
+      <button onClick={(e) => navigate("/payments", { replace: true })}>
+        Proceed to Checkout
+      </button>
     </div>
   );
 }

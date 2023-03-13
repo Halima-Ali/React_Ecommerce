@@ -15,6 +15,7 @@ import { Elements } from "@stripe/react-stripe-js";
 function App() {
   const [state, dispatch] = useStateValue();
 
+  
     const promise = loadStripe(
       "pk_test_51KzdcZBuWfpOWtPjCWlSdDN3eFrsmDrY5VrePYQZpXCS120PhdIIU60VpnS0C2nK3nz9hb40rszv3FS6sNoQzwuV00ZiOF7Dbm"
     );
@@ -69,7 +70,7 @@ function App() {
             />
             <Route path="/login" element={<Login />} />
             <Route
-              path="/payment"
+              path="/payments"
               element={
                 <>
                   <Header />{" "}

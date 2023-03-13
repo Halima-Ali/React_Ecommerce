@@ -1,0 +1,117 @@
+[debug] [2023-03-09T08:10:28.216Z] ----------------------------------------------------------------------
+[debug] [2023-03-09T08:10:28.234Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-03-09T08:10:28.235Z] CLI Version:   11.24.1
+[debug] [2023-03-09T08:10:28.236Z] Platform:      win32
+[debug] [2023-03-09T08:10:28.236Z] Node Version:  v18.10.0
+[debug] [2023-03-09T08:10:29.088Z] Time:          Thu Mar 09 2023 11:10:28 GMT+0300 (East Africa Time)
+[debug] [2023-03-09T08:10:29.090Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-09T08:10:30.535Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-09T08:10:30.536Z] > authorizing via signed-in user (halimaali.ha2002@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-03-09T08:10:30.582Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-09T08:10:30.583Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-09T08:10:30.584Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-03-09T08:10:30.718Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-ecommerce-6b823.json
+[debug] [2023-03-09T08:10:31.422Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-09T08:10:31.423Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-09T08:10:31.423Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-03-09T08:10:31.434Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\halimaali_ha2002_gmail.com_application_default_credentials.json
+[debug] [2023-03-09T08:10:31.440Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\halimaali_ha2002_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\halimaali_ha2002_gmail.com_application_default_credentials.json"}}
+[debug] [2023-03-09T08:10:31.444Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-6b823/adminSdkConfig [none]
+[debug] [2023-03-09T08:10:33.580Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-6b823/adminSdkConfig 200
+[debug] [2023-03-09T08:10:33.581Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-6b823/adminSdkConfig {"projectId":"ecommerce-6b823","storageBucket":"ecommerce-6b823.appspot.com"}
+[debug] [2023-03-09T08:10:33.734Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-6b823/sites 
+[debug] [2023-03-09T08:10:37.395Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-6b823/sites 200
+[debug] [2023-03-09T08:10:37.396Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce-6b823/sites {"sites":[{"name":"projects/ecommerce-6b823/sites/ecommerce-6b823","defaultUrl":"https://ecommerce-6b823.web.app","appId":"1:872836861015:web:169695d011c93745fde712","type":"DEFAULT_SITE"}]}
+[debug] [2023-03-09T08:10:37.397Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-6b823/webApps/1:872836861015:web:169695d011c93745fde712/config [none]
+[debug] [2023-03-09T08:10:39.005Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-6b823/webApps/1:872836861015:web:169695d011c93745fde712/config 200
+[debug] [2023-03-09T08:10:39.006Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-6b823/webApps/1:872836861015:web:169695d011c93745fde712/config {"projectId":"ecommerce-6b823","appId":"1:872836861015:web:169695d011c93745fde712","storageBucket":"ecommerce-6b823.appspot.com","apiKey":"AIzaSyA2qwMsOlBqsmAxn9hNeOqO9ENuCQCjUb0","authDomain":"ecommerce-6b823.firebaseapp.com","messagingSenderId":"872836861015","measurementId":"G-VDGBY6LM3B"}
+[debug] [2023-03-09T08:10:39.152Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-6b823 [none]
+[debug] [2023-03-09T08:10:41.805Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-6b823 200
+[debug] [2023-03-09T08:10:41.807Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-6b823 {"projectId":"ecommerce-6b823","projectNumber":"872836861015","displayName":"ecommerce","name":"projects/ecommerce-6b823","resources":{"hostingSite":"ecommerce-6b823"},"state":"ACTIVE","etag":"1_8ffe67c6-f8a7-404e-9eb5-56d9f0bc8136"}
+[info] i  hosting[ecommerce-6b823]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[ecommerce-6b823]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-03-09T08:10:42.110Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-03-09T08:10:42.111Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-03-09T08:10:42.112Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\User\\.cache\\firebase\\emulators\\ui-v1.11.4\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.4\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-03-09T08:10:44.097Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-03-09T08:10:44.098Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\User\Desktop\ecommerce\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\Desktop\\ecommerce\\functions\" for Cloud Functions..."}}
+[debug] [2023-03-09T08:10:44.203Z] Validating nodejs source
+[debug] [2023-03-09T08:10:54.400Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:857:24)
+    at Function.spawnSync [as sync] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:55:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:76:32)
+    at Delegate.validate (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:291:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:320:34)
+    at async FunctionsEmulator.connect (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:257:13)
+    at async Object.startAll (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:547:13)
+    at async C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\emulators-start.js:32:43
+[debug] [2023-03-09T08:10:54.403Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-03-09T08:10:54.404Z] Building nodejs source
+[debug] [2023-03-09T08:10:54.406Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\ecommerce\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-03-09T08:10:54.420Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-09T08:10:54.520Z] Found firebase-functions binary at 'C:\Users\User\Desktop\ecommerce\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FetchError: request to http://localhost:8891/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8891 {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FetchError: request to http://localhost:8891/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8891"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-03-09T08:11:44.485Z] Serving at port 8891
+
+[info] i  hosting: 127.0.0.1 - - [09/Mar/2023:08:14:59 +0000] "GET / HTTP/1.1" 200 550 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Mar/2023:08:14:59 +0000] \"GET / HTTP/1.1\" 200 550 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Mar/2023:08:15:03 +0000] "GET /static/css/main.f7f817df.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Mar/2023:08:15:03 +0000] \"GET /static/css/main.f7f817df.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Mar/2023:08:15:22 +0000] "GET /static/js/main.61678f90.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Mar/2023:08:15:22 +0000] \"GET /static/js/main.61678f90.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Mar/2023:08:25:17 +0000] "GET /static/css/main.f7f817df.css.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Mar/2023:08:25:17 +0000] \"GET /static/css/main.f7f817df.css.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\""}}
+[debug] [2023-03-09T08:51:48.284Z] Received signal SIGHUP 1

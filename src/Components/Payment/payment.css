@@ -5,7 +5,8 @@
 .payment__container h1{
  text-align: center;
  padding: 10px;
- border-bottom: 1px solid lightgray;
+ margin: 0 30px;
+ border-bottom:0.1px solid #F0EEED;
  font-weight: 400;
  /* background-color: #F6F6F6; */
 }
@@ -16,9 +17,9 @@
 
 .payment__section{
  display: flex;
- padding: 20px;
- margin: 0 20px;
- border-bottom: 1px solid lightgray;
+ padding: 30px;
+ margin: 0 30px;
+ border-bottom:0.1px solid #F0EEED;
 }
 
 .payment__title{
@@ -28,3 +29,4 @@
 .payment__address, .payment__items, .payment__details{
  flex: 0.8;
 }
+
